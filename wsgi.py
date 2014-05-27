@@ -1,14 +1,14 @@
 import os, sys, pprint
 #import monitor
-
+sys.path.append("/Simpletown")
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "settings.prod")
 
 # django site location
-sys.path.append('srv/django')
-sys.path.append('/srv/django/sb_biz')
+sys.path.append('Simpletown')#'srv/django')
+sys.path.append('/Simpletown')#'/srv/django/sb_biz')
 
 # django core location
-sys.path.append('/home/ubuntu/.virtualenvs/sb_biz/lib/python2.7/site-packages/django/')
+sys.path.append('/lib/python2.7/site-packages/django/')#'/home/ubuntu/.virtualenvs/sb_biz/lib/python2.7/site-packages/django/')
 sys.path.insert(0, os.path.join(os.path.abspath(os.path.dirname(__file__)),'..'))
 
 from django.core.wsgi import get_wsgi_application

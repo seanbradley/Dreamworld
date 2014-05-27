@@ -174,7 +174,7 @@ SECRET_KEY = get_env_variable("SECRET_KEY")
 
 # Hosts/domain names that are valid for this site; required if DEBUG is False
 # See https://docs.djangoproject.com/en/1.5/ref/settings/#allowed-hosts
-ALLOWED_HOSTS = ["localhost", "127.0.0.1"]
+ALLOWED_HOSTS = ["localhost", "127.0.0.1","54.86.113.5","ec2-54-86-113-5.compute-1.amazonaws.com"]
 
 # Local time zone for this installation. Choices can be found here:
 # http://en.wikipedia.org/wiki/List_of_tz_zones_by_name although not all
@@ -204,7 +204,7 @@ USE_L10N = True
 
 
 ########## DEBUG CONFIGURATION
-DEBUG =  bool(os.environ.get('DEBUG', False))
+DEBUG = True #bool(os.environ.get('DEBUG', False))
 ########## END DEBUG CONFIGURATION
 
 
